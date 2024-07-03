@@ -1,0 +1,44 @@
+:root {
+    --header-line-padding: 0.21rem;
+    --header-background-color: black;
+    --header-line-color: rgb(238, 255, 1);
+    --header-text-color: white;
+    --header-padding-vertical: .4em;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0;
+    padding: var(--header-padding-vertical)
+}
+
+header h1 span {
+    margin-left: .6rem;
+    font-size: 1.3rem;
+}
+
+header {
+    user-select: none;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    margin-bottom: .2em;
+}
+
+header > hr {
+    height: var(--header-line-padding);
+    background-color: var(--header-line-color);
+    border: 0px;
+}
+
+.language {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 360px) {
+    header h1 { font-size: 12vw; }
+    .language { font-size: 3vw; }
+}

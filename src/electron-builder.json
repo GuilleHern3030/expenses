@@ -1,0 +1,12 @@
+{
+    "appId": "enel.expenses.js",
+    "productName": "Expenses",
+    "directories": {
+      "output": "desktop-app"
+    },
+    "files": [
+      "main.js",
+      "src/**/*"
+    ],
+    "asar": true
+}

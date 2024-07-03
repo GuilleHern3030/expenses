@@ -1,0 +1,83 @@
+.fragment_background {
+    background-color: rgba(24, 24, 24, 0.269);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+.fragment {
+    height: 10em;
+    width: 15em;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: 1px solid black;
+    user-select: none;
+}
+
+.taskbar {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1px;
+    padding-right: 2px;
+    height: 1em;
+    background-color:dimgrey;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.taskbar > img {
+    cursor: pointer;
+}
+
+.text {
+    margin: .8em;
+}
+
+.input {
+    width: 60%;
+    text-align: center;
+}
+
+.buttonContainer {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonContainer > * {
+    cursor: pointer;
+    margin: .5em;
+}
+
+@media only screen and (max-width: 1024px) {
+    .fragment {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .fragment {
+        font-size: .8em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .fragment {
+        font-size: .6em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .fragment {
+        font-size: .5em;
+    }
+}

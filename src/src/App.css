@@ -1,0 +1,11 @@
+#root {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: max-content 1fr max-content;
+  text-align: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+}

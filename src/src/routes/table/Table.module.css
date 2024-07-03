@@ -1,0 +1,58 @@
+.tableContainer {
+    margin: .5em;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table > * {
+    border: 1px solid #000000;
+    text-align: center;
+    margin: 0;
+    background-color: aliceblue;
+    padding: .5em;
+}
+
+.table > .tableHeader {
+    font-weight: 600;
+    font-size: 1.4em;
+    user-select: none;
+}
+
+.table > .tableFooter {
+    border: 0px solid #fff;
+}
+
+
+.tablePlusContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    user-select: none;
+}
+
+.tablePlus {
+    border-radius: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+.total {
+    user-select: none;
+}
+
+.usd {
+    cursor: pointer;
+}
+
+.usdValue {
+    font-size: .7em;
+}
